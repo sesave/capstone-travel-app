@@ -1,7 +1,7 @@
 import './styles/base.scss'
 
-import { setTrip} from './js/app'
+import { setTravel} from './js/app'
 
 export {
-    setTrip
+    setTravel
 }

@@ -1,0 +1,51 @@
+{
+    "name": "capstone-travel-app-udacity",
+    "version": "1.0.0",
+    "description": "Sebas's app",
+    "main": "server.js",
+    "scripts": {
+        "server": "node --inspect src/server/server.js",
+        "prod": "webpack --config webpack.prod.js",
+        "dev": "webpack-dev-server  --config webpack.dev.js --open",
+        "start": "npm run prod && npm run server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sebaskun98/capstone-travel-app"
+    },
+    "author": "Sebastian Sánchez",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/sebaskun98/capstone-travel-app/issues"
+    },
+    "homepage": "https://github.com/sebaskun98/capstone-travel-app#readme",
+    "dependencies": {
+        "axios": "^0.19.2",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "file-loader": "^6.0.0",
+        "jest": "^26.0.1",
+        "mini-css-extract-plugin": "^0.9.0",
+        "optimize-css-assets-webpack-plugin": "^5.0.3",
+        "supertest": "^4.0.2",
+        "terser-webpack-plugin": "^3.0.1",
+        "url-loader": "^4.1.0",
+        "webpack": "^4.35.3",
+        "webpack-cli": "^3.3.5"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.5.4",
+        "@babel/preset-env": "^7.5.4",
+        "babel-loader": "^8.0.6",
+        "clean-webpack-plugin": "^3.0.0",
+        "css-loader": "^3.5.3",
+        "dotenv": "^8.2.0",
+        "html-webpack-plugin": "^3.2.0",
+        "node-fetch": "^2.6.0",
+        "node-sass": "^4.14.1",
+        "sass-loader": "^8.0.2",
+        "style-loader": "^1.2.1",
+        "webpack-dev-server": "^3.11.0",
+        "workbox-webpack-plugin": "^5.1.3"
+    }
+}

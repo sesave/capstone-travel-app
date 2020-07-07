@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Travellin..</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Travellin!</h1>
+    </header>
+
+    <main>
+        <section>
+            <form onsubmit="return Client.addTrip(event)">
+                <input id="place" type="text" name="input" value="" placeholder="The city you want to go" required>
+                <input id="date" type="date" name="date" value="" placeholder="yyyy-mm-dd" required>
+                <input type="submit" name="" value="Save trip">
+            </form>
+        </section>
+        <section id="noTrips">
+            <h2>No trips yet! Try adding some in the form above.</h2>
+        </section>
+        <section>
+            <section>
+                <div id="results"></div>
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy travellin 2020</p>
+    </footer>
+
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+
+</body>
+
+</html>

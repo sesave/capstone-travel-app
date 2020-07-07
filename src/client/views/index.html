@@ -3,25 +3,25 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Travellin..</title>
+    <title>Capstone Travel App</title>
 </head>
 
 <body>
 
     <header>
-        <h1>Travellin!</h1>
+        <h1>Capstone Travel App</h1>
     </header>
 
     <main>
         <section>
-            <form onsubmit="return Client.addTrip(event)">
+            <form onsubmit="return Client.setTrip(event)">
                 <input id="place" type="text" name="input" value="" placeholder="The city you want to go" required>
                 <input id="date" type="date" name="date" value="" placeholder="yyyy-mm-dd" required>
-                <input type="submit" name="" value="Save trip">
+                <input id="submit" type="submit" name="" value="Save travel">
             </form>
         </section>
-        <section id="noTrips">
-            <h2>No trips yet! Try adding some in the form above.</h2>
+        <section id="woTravels">
+            <h2>Any travels yet! Use the form above to let us know your adventures</h2>
         </section>
         <section>
             <section>
@@ -30,7 +30,7 @@
     </main>
 
     <footer>
-        <p>&copy travellin 2020</p>
+        <p>&copy Sebastian Sánchez Vega</p>
     </footer>
 
     <script>

@@ -4,7 +4,7 @@ const getTravelData = async (place, date) => {
         const respData = await resp.json();
         return respData;
     } catch (error) {
-        alert("Error getting form data ", error);
+        alert("Error getting form data. Try to rewrite your city ", error);
     }
 };
 

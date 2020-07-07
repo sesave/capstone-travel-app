@@ -4,7 +4,7 @@
     "description": "Sebas's app",
     "main": "server.js",
     "scripts": {
-        "server": "node --inspect src/server/server.js",
+        "server": "node src/server/server.js",
         "prod": "webpack --config webpack.prod.js",
         "dev": "webpack-dev-server  --config webpack.dev.js --open",
         "start": "npm run prod && npm run server"

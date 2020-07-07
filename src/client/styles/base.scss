@@ -142,7 +142,8 @@ input {
     cursor: pointer;
 }
 
-.noPhoto {
+.noPhoto,
+.image img {
     max-width: 640px;
     width: 100%;
     max-height: 480px;
